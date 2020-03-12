@@ -1,0 +1,8 @@
+c:\Users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+c:\Users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+c:\Users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+c:\Users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ConsoleApplication1\bin\Debug\MobilePhone.dll
+c:\Users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ConsoleApplication1\bin\Debug\MobilePhone.pdb
+c:\Users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+c:\Users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+c:\Users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

@@ -1,0 +1,5 @@
+c:\users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\MobilePhone.csprojResolveAssemblyReference.cache
+c:\users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\MobilePhone.dll
+c:\users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\MobilePhone.pdb
+c:\users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\MobilePhone.dll
+c:\users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\MobilePhone.pdb
