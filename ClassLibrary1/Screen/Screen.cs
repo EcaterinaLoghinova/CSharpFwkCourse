@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MobilePhone
+namespace SimCorp.IMS.Framework
 {
     public class Screen {
         private double ScreenSize { get; set; }

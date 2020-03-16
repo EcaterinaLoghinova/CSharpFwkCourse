@@ -4,9 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MobilePhone
+namespace SimCorp.IMS.Framework
 {
     public class MonochromeScreen : ScreenBase {
+
+        private string screenType;
+        private int tonesOfGrey;
+        public MonochromeScreen(int TonesOfGrey)
+        {
+            screenType = "Monochrome Screen";
+            tonesOfGrey = TonesOfGrey;
+        }
+
+        public MonochromeScreen()
+        {
+            screenType = "Monochrome Screen";
+        }
+
         public override void Show(IScreenImage screenImage)
         {
            //here code that draws greyscale image could be added
@@ -17,7 +31,7 @@ namespace MobilePhone
         }
 
         public override string ToString(){
-            return "Monochrome Screen";
+            return screenType;
         }
     }
 }

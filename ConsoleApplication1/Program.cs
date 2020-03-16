@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MobilePhone
-
+namespace SimCorp.IMS.Framework
 {
     class Program
     {
         static void Main(string[] args)
         {
             var mobilePhone = new SimCorpMobile();
-            Console.WriteLine($"{mobilePhone.GetDescription()}");
+            Console.WriteLine(mobilePhone);
             Console.ReadKey();
         }
     }

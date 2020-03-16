@@ -3,3 +3,8 @@ c:\users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\b
 c:\users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\MobilePhone.pdb
 c:\users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\MobilePhone.dll
 c:\users\ela\documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\MobilePhone.pdb
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ClassLibrary1\obj\Debug\MobilePhone.csprojResolveAssemblyReference.cache
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ClassLibrary1\obj\Debug\MobilePhone.dll
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ClassLibrary1\obj\Debug\MobilePhone.pdb
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ClassLibrary1\bin\Debug\MobilePhone.dll
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ClassLibrary1\bin\Debug\MobilePhone.pdb

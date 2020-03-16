@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MobilePhone
+namespace SimCorp.IMS.Framework
 {
     public interface IScreenImage {
         void showMemoryId(int memoryId);

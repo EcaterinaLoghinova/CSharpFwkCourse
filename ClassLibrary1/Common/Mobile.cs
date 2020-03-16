@@ -4,9 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MobilePhone
+namespace SimCorp.IMS.Framework
 {
     public abstract class Mobile {
+
+        private SelfieCamera selfieCamera;
+        private StringBuilder descriptionBuilder;
+       
+        public Mobile(){
+          selfieCamera = new SelfieCamera();
+          descriptionBuilder = new StringBuilder();
+        }
+
         public abstract ScreenBase Screen {get; }
         public abstract ScreenBase ScreenColor { get; }
         private void Show(IScreenImage screenImage) {
@@ -14,13 +23,14 @@ namespace MobilePhone
             ScreenColor.Show(screenImage);
         }
 
-        private SelfieCamera selfieCamera = new SelfieCamera();
+        public abstract string ShowModel();
+        public abstract string ShowRGB();
 
-        public string GetDescription() {
-            var descriptionBuilder = new StringBuilder();
-            descriptionBuilder.AppendLine("Phone information:");
+        public override string ToString() {
+            descriptionBuilder.AppendLine($"Model info: {ShowModel()}");
             descriptionBuilder.AppendLine($"Screen Type: {Screen.ToString()}");
             descriptionBuilder.AppendLine($"Screen Color: {ScreenColor.ToString()}");
+            descriptionBuilder.AppendLine($"RGB tones: {ShowRGB()}");
             descriptionBuilder.AppendLine($"Video on selfie camera: {selfieCamera.HasVideo(true)}");
             return descriptionBuilder.ToString();
         }
