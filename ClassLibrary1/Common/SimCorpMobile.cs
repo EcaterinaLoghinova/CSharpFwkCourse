@@ -9,8 +9,17 @@ namespace SimCorp.IMS.Framework
     public class SimCorpMobile : Mobile
     {
         private Model mobileModel;
+        //Screen
         private readonly OLEDScreen vOLEDScreen;
         private readonly ColorfulScreen vColorScreen;
+        private iPhoneHeadset iphoneHeadset;
+        private SamsungHeadset samsungHeadset;
+        private UnofficialIPhoneHeadset unofficialiPhoneHeadset;
+        private PhoneSpeaker phoneSpeaker;
+        private List<IPlayback> objectlist;
+
+        //Playback
+        private ConsoleOutput Output;
 
         public SimCorpMobile()
         {
@@ -18,7 +27,13 @@ namespace SimCorp.IMS.Framework
             vOLEDScreen = new OLEDScreen();
             vColorScreen = new ColorfulScreen(255, 255, 255);
             rgb = "";
-        }
+            Output = new ConsoleOutput();
+            iphoneHeadset = new iPhoneHeadset(Output);
+            samsungHeadset = new SamsungHeadset(Output);
+            unofficialiPhoneHeadset = new UnofficialIPhoneHeadset(Output);
+            phoneSpeaker = new PhoneSpeaker(Output);
+            objectlist = new List<IPlayback>() { iphoneHeadset, samsungHeadset, unofficialiPhoneHeadset, phoneSpeaker };
+         }
 
         public override ScreenBase Screen { get { return vOLEDScreen; } }
         public override ScreenBase ScreenColor { get { return vColorScreen; } }
@@ -36,8 +51,35 @@ namespace SimCorp.IMS.Framework
             b = vColorScreen.GetTonesB().ToString();
             rgb = string.Join(",", r, g, b);
             return rgb;
-   
+
+        }
+
+        //Handle selected playback option
+        public void WriteSelectedOption(int answer){
+            switch (answer)
+            {
+                case 1:         
+                    PlaybackInfo(objectlist[0]);
+                    break;
+                case 2:
+                    PlaybackInfo(objectlist[1]);
+                    break;
+                case 3:
+                    PlaybackInfo(objectlist[2]);
+                    break;
+                case 4:
+                    PlaybackInfo(objectlist[3]);
+                    break;
+                default:
+                    throw new InvalidOperationException("Unknown option");
+            }
+        }
+
+        //Playback options to select
+        public void SelectPlaybackOption(){
+            WritePlaybackOptions(objectlist);
+            int answer = int.Parse(Console.ReadLine());
+            WriteSelectedOption(answer);       
         }
     }
-}
-        
+}       

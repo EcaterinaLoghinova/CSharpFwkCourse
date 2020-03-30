@@ -10,10 +10,12 @@ namespace SimCorp.IMS.Framework
 
         private SelfieCamera selfieCamera;
         private StringBuilder descriptionBuilder;
+        private ConsoleOutput output;
        
         public Mobile(){
           selfieCamera = new SelfieCamera();
           descriptionBuilder = new StringBuilder();
+          output = new ConsoleOutput();
         }
 
         public abstract ScreenBase Screen {get; }
@@ -34,5 +36,30 @@ namespace SimCorp.IMS.Framework
             descriptionBuilder.AppendLine($"Video on selfie camera: {selfieCamera.HasVideo(true)}");
             return descriptionBuilder.ToString();
         }
+
+        public IPlayback PlaybackComponent;
+
+        public void WritePlaybackOptions(List<IPlayback> data)
+        {
+            Console.WriteLine("Select playback component (specify index):");
+            for (int i = 0; i < data.Count; i++)
+            {
+                output.Write($"{i+1} - ");
+                data[i].Play(data[i]);
+                output.WriteLine("");
+            }
+        }
+
+        public void PlaybackInfo(IPlayback data)
+        {
+            PlaybackComponent = data;
+            PlaybackComponent.Play(data);
+            output.WriteLine(" playback selected");
+            output.WriteInfo();
+            PlaybackComponent.Play(data);
+            output.WriteLine(" sound");
+            Console.ReadKey();
+        }
+
     }
 }

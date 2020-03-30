@@ -8,3 +8,8 @@ C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ClassLibrary1\obj\D
 C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ClassLibrary1\obj\Debug\MobilePhone.pdb
 C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ClassLibrary1\bin\Debug\MobilePhone.dll
 C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ClassLibrary1\bin\Debug\MobilePhone.pdb
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary1\bin\Debug\MobilePhone.dll
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary1\bin\Debug\MobilePhone.pdb
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary1\obj\Debug\MobilePhone.csprojResolveAssemblyReference.cache
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary1\obj\Debug\MobilePhone.dll
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary1\obj\Debug\MobilePhone.pdb

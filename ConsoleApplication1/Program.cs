@@ -12,7 +12,9 @@ namespace SimCorp.IMS.Framework
         {
             var mobilePhone = new SimCorpMobile();
             Console.WriteLine(mobilePhone);
+            mobilePhone.SelectPlaybackOption();
             Console.ReadKey();
         }
+
     }
 }

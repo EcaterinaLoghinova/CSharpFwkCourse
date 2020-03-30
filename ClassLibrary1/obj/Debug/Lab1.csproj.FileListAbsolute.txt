@@ -1,0 +1,7 @@
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary1\bin\Debug\MobilePhone.dll
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary1\bin\Debug\MobilePhone.pdb
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary1\obj\Debug\Lab1.csprojResolveAssemblyReference.cache
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary1\obj\Debug\MobilePhone.dll
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary1\obj\Debug\MobilePhone.pdb
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary1\bin\Debug\SimCorp.IMS.Framework.dll
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary1\bin\Debug\SimCorp.IMS.Framework.pdb

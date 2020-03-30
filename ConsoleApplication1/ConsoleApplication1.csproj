@@ -50,9 +50,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\MobilePhone.csproj">
+    <ProjectReference Include="..\ClassLibrary1\Lab1.csproj">
       <Project>{fc9926de-0497-424c-a28c-5aa089f2b51b}</Project>
-      <Name>MobilePhone</Name>
+      <Name>Lab1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibrary2\Lab2.csproj">
+      <Project>{e17edf8a-43c8-46dc-80ae-badeb87ca564}</Project>
+      <Name>Lab2</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

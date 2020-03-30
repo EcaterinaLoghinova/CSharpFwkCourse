@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FC9926DE-0497-424C-A28C-5AA089F2B51B}</ProjectGuid>
+    <ProjectGuid>{E17EDF8A-43C8-46DC-80AE-BADEB87CA564}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MobilePhone</RootNamespace>
-    <AssemblyName>MobilePhone</AssemblyName>
+    <RootNamespace>SimCorp.IMS.Framework</RootNamespace>
+    <AssemblyName>SimCorp.IMS.Framework</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,21 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Camera\Camera.cs" />
-    <Compile Include="Common\SimCorpMobile.cs" />
-    <Compile Include="Common\Mobile.cs" />
-    <Compile Include="Screen\OLEDScreen.cs" />
-    <Compile Include="Screen\ColorfulScreen.cs" />
-    <Compile Include="Screen\MonochromeScreen.cs" />
-    <Compile Include="Screen\IScreenImage.cs" />
-    <Compile Include="Camera\MainCamera.cs" />
-    <Compile Include="Common\Model.cs" />
-    <Compile Include="Screen\RetinaScreen.cs" />
-    <Compile Include="Screen\Screen.cs" />
+    <Compile Include="Charger\ICharger.cs" />
+    <Compile Include="Charger\iPhoneCharger.cs" />
+    <Compile Include="Charger\MicroUSB.cs" />
+    <Compile Include="Charger\TypeCUSB.cs" />
+    <Compile Include="Charger\WirelessCharger.cs" />
+    <Compile Include="ConsoleOutput.cs" />
+    <Compile Include="FakeOutput.cs" />
+    <Compile Include="IOutput.cs" />
+    <Compile Include="Playback\iPhoneHeadset.cs" />
+    <Compile Include="Playback\IPlayback.cs" />
+    <Compile Include="Playback\PhoneSpeaker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Screen\ScreenBase.cs" />
-    <Compile Include="Camera\SelfieCamera.cs" />
+    <Compile Include="Playback\SamsungHeadset.cs" />
+    <Compile Include="Playback\UnofficialIPhoneHeadset.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

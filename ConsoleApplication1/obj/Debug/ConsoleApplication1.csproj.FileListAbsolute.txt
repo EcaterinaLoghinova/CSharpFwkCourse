@@ -14,3 +14,13 @@ C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ConsoleApplication1
 C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
 C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ConsoleApplication1\bin\Debug\MobilePhone.dll
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ConsoleApplication1\bin\Debug\MobilePhone.pdb
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ConsoleApplication1\bin\Debug\SimCorp.IMS.Framework.dll
+C:\Users\ela\Source\Repos\CSharpFwkCourse\ConsoleApplication1\bin\Debug\SimCorp.IMS.Framework.pdb

@@ -1,0 +1,10 @@
+C:\Users\ela\Source\Repos\CSharpFwkCourse\PlaybackTest\bin\Debug\SimCorp.IMS.Framework.Test.dll
+C:\Users\ela\Source\Repos\CSharpFwkCourse\PlaybackTest\bin\Debug\SimCorp.IMS.Framework.Test.pdb
+C:\Users\ela\Source\Repos\CSharpFwkCourse\PlaybackTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\ela\Source\Repos\CSharpFwkCourse\PlaybackTest\obj\Debug\MobilePhoneTests.csprojResolveAssemblyReference.cache
+C:\Users\ela\Source\Repos\CSharpFwkCourse\PlaybackTest\obj\Debug\SimCorp.IMS.Framework.Test.dll
+C:\Users\ela\Source\Repos\CSharpFwkCourse\PlaybackTest\obj\Debug\SimCorp.IMS.Framework.Test.pdb
+C:\Users\ela\Source\Repos\CSharpFwkCourse\PlaybackTest\bin\Debug\MobilePhone.dll
+C:\Users\ela\Source\Repos\CSharpFwkCourse\PlaybackTest\bin\Debug\SimCorp.IMS.Framework.dll
+C:\Users\ela\Source\Repos\CSharpFwkCourse\PlaybackTest\bin\Debug\MobilePhone.pdb
+C:\Users\ela\Source\Repos\CSharpFwkCourse\PlaybackTest\bin\Debug\SimCorp.IMS.Framework.pdb
