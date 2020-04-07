@@ -71,7 +71,10 @@ namespace SimCorp.IMS.Framework
                     PlaybackInfo(objectlist[3]);
                     break;
                 default:
-                    throw new InvalidOperationException("Unknown option");
+                    Console.WriteLine("Unknown option has been selected.");
+                    Console.WriteLine("Please try again.");
+                    WritePlaybackOptions(objectlist);
+                    break;
             }
         }
 

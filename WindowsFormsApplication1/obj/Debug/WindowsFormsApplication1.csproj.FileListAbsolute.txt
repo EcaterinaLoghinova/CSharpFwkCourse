@@ -11,3 +11,17 @@ C:\Users\ela\Source\Repos\CSharpFwkCourse\WindowsFormsApplication1\bin\Debug\Sim
 C:\Users\ela\Source\Repos\CSharpFwkCourse\WindowsFormsApplication1\bin\Debug\SimCorp.IMS.Framework.GUI.pdb
 C:\Users\ela\Source\Repos\CSharpFwkCourse\WindowsFormsApplication1\obj\Debug\SimCorp.IMS.Framework.GUI.exe
 C:\Users\ela\Source\Repos\CSharpFwkCourse\WindowsFormsApplication1\obj\Debug\SimCorp.IMS.Framework.GUI.pdb
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\bin\Debug\SimCorp.IMS.Framework.GUI.exe.config
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\obj\Debug\SimCorp.IMS.Framework.GUI.exe
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\obj\Debug\SimCorp.IMS.Framework.GUI.pdb
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\bin\Debug\SimCorp.IMS.Framework.GUI.exe
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\bin\Debug\SimCorp.IMS.Framework.GUI.pdb
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\bin\Debug\MobilePhone.dll
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\bin\Debug\SimCorp.IMS.Framework.dll
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\bin\Debug\MobilePhone.pdb
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\bin\Debug\SimCorp.IMS.Framework.pdb
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\obj\Debug\SimCorp.IMS.Framework.GUI.SelectChargerForm.resources
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\obj\Debug\SimCorp.IMS.Framework.GUI.Properties.Resources.resources
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\obj\Debug\SimCorp.IMS.Framework.GUI.MessageBoxForm.resources

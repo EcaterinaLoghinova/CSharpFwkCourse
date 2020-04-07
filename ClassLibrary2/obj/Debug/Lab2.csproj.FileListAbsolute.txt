@@ -3,3 +3,8 @@ C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary2\bin\Debug\SimCorp.IMS.Fr
 C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary2\obj\Debug\Lab2.csprojResolveAssemblyReference.cache
 C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary2\obj\Debug\SimCorp.IMS.Framework.dll
 C:\Users\ela\Source\Repos\CSharpFwkCourse\ClassLibrary2\obj\Debug\SimCorp.IMS.Framework.pdb
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ClassLibrary2\bin\Debug\SimCorp.IMS.Framework.dll
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ClassLibrary2\bin\Debug\SimCorp.IMS.Framework.pdb
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ClassLibrary2\obj\Debug\Lab2.csprojResolveAssemblyReference.cache
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ClassLibrary2\obj\Debug\SimCorp.IMS.Framework.dll
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\ClassLibrary2\obj\Debug\SimCorp.IMS.Framework.pdb

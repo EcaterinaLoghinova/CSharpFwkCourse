@@ -117,7 +117,6 @@
             this.textBox1.Size = new System.Drawing.Size(319, 16);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "Select a charger component:";
-           // this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // richTextBox1
             // 
@@ -144,6 +143,7 @@
             this.Controls.Add(this.radioButton1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "SelectChargerForm";
             this.Text = "Charger component";
             this.ResumeLayout(false);

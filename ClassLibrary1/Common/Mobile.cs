@@ -60,6 +60,5 @@ namespace SimCorp.IMS.Framework
             output.WriteLine(" sound");
             Console.ReadKey();
         }
-
     }
 }

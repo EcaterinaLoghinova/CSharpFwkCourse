@@ -1,0 +1,10 @@
+C:\Users\ela\Source\Repos\CSharpFwkCourse\Lab3\bin\Debug\SimCorp.IMS.Framework.dll
+C:\Users\ela\Source\Repos\CSharpFwkCourse\Lab3\bin\Debug\SimCorp.IMS.Framework.pdb
+C:\Users\ela\Source\Repos\CSharpFwkCourse\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
+C:\Users\ela\Source\Repos\CSharpFwkCourse\Lab3\obj\Debug\SimCorp.IMS.Framework.dll
+C:\Users\ela\Source\Repos\CSharpFwkCourse\Lab3\obj\Debug\SimCorp.IMS.Framework.pdb
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\Lab3\bin\Debug\SimCorp.IMS.Framework.dll
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\Lab3\bin\Debug\SimCorp.IMS.Framework.pdb
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\Lab3\obj\Debug\SimCorp.IMS.Framework.dll
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\Lab3\obj\Debug\SimCorp.IMS.Framework.pdb
