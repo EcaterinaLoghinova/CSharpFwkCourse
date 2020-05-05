@@ -7,11 +7,16 @@ using System.Threading;
 namespace SimCorp.IMS.Framework
 { 
 
-    public class SMSProvider{
+  internal class SMSProvider{
+
+        public SMSProvider()
+        {
+            smsStorage = new SMSStorage();
+        }
 
         public delegate void SMSRecievedDelegate(string message);
         public event SMSRecievedDelegate SMSReceived;
-
+        
         //Delegates for message formatting
         public delegate string FormatDelegate(string text);
         public readonly FormatDelegate CustomFormatter = new FormatDelegate(CustomFormat);
@@ -20,6 +25,7 @@ namespace SimCorp.IMS.Framework
         public readonly FormatDelegate UppercaseFormatter = new FormatDelegate(UppercaseFormat);
         public readonly FormatDelegate LowercaseFormatter = new FormatDelegate(LowercaseFormat);
         private string formattedMessage;
+        private SMSStorage smsStorage;
 
         //Raise rhe ecvent
         public void RaiseSMSReceivedEvent(string message)
@@ -62,6 +68,7 @@ namespace SimCorp.IMS.Framework
             return (message.ToLower());
         }
 
+
         //Generate messages according to the selected formatting
         public string GenerateMessage(int index, string message){
 
@@ -91,8 +98,13 @@ namespace SimCorp.IMS.Framework
                     formattedMessage = message + Environment.NewLine;
                     break;
             }
+
+            smsStorage.RaiseSMSAddedEvent(formattedMessage);
+            SMSStorage.AddMessage(formattedMessage);
             return formattedMessage;
         }
+
+
 
     }
 }
