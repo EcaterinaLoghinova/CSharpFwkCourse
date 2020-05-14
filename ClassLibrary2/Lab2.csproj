@@ -48,8 +48,13 @@
     <Compile Include="ConsoleOutput.cs" />
     <Compile Include="FakeOutput.cs" />
     <Compile Include="IOutput.cs" />
+    <Compile Include="Lab 5\Battery.cs" />
+    <Compile Include="Lab 5\IBatteryCharging.cs" />
+    <Compile Include="Lab 5\IChargeFactory.cs" />
+    <Compile Include="Lab 5\ISMSGeneratingFactory.cs" />
     <Compile Include="Lab4\Message.cs" />
     <Compile Include="Lab4\MessagesFiltering.cs" />
+    <Compile Include="Lab 5\ISMSGenerating.cs" />
     <Compile Include="Lab4\SMSStorage.cs" />
     <Compile Include="Playback\iPhoneHeadset.cs" />
     <Compile Include="Playback\IPlayback.cs" />

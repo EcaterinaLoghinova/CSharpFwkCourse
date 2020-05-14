@@ -6,7 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace SimCorp.IMS.Framework.GUI
 {
@@ -16,7 +18,10 @@ namespace SimCorp.IMS.Framework.GUI
         private int messagenumber;
         private List<Message> messages;
         private MessagesFiltering messageFilter;
-
+        static object locker = new Object();
+        private bool smsRecievingIsActive;
+        private ISMSGenerating smsGenerating;
+        private IBatteryCharging batteryCharge;
 
         public MessageBoxForm()
         {
@@ -24,11 +29,16 @@ namespace SimCorp.IMS.Framework.GUI
             smsStorage= new SMSStorage();
             messageFilter = new MessagesFiltering();
 
+            ISMSGeneratingFactory smsGenerateFactory = new SMSGeneratingFactory(recievedMessagesRichTextBox);
+            // Creation of smsGenerating using Simple Factory
+            smsGenerating = smsGenerateFactory.CreateGeneratingType(GenerateType.smsGeneratingTask);
+           // smsGenerating = smsGenerateFactory.CreateGeneratingType(GenerateType.smsGeneratingThread);
+
             //Create a list of messages
             messages = new List<Message>();
 
             //Add data to the list of messages
-            messages.Add(new Message() { User = "Jhon", Text = "Today's game was awesome! Thanks for your participation", RecievingTime = new DateTime(2018, 8, 31, 20, 48, 45) });
+            messages.Add(new Message() {User = "Jhon", Text = "Today's game was awesome! Thanks for your participation", RecievingTime = new DateTime(2018, 8, 31, 20, 48, 45) });
             messages.Add(new Message() {User = "Jhon", Text = "Hi! How are you doing?", RecievingTime = new DateTime(2020,1,3,16,32,7)});
             messages.Add(new Message() {User = "Bob", Text = "Good morning! Please call me back ASAP", RecievingTime = new DateTime(2020,4,13,9,10,6)});
             messages.Add(new Message() {User = "TVshop", Text = "Hello! Christmas sales are coming!", RecievingTime = new DateTime(2019, 12, 15, 9, 20, 3)});
@@ -36,12 +46,26 @@ namespace SimCorp.IMS.Framework.GUI
 
             //Show messages on the form
             ShowMessage(messages);
+
+            //Battery info    
+            Battery.Charge = 100;
+            chargeProgressBar.Value = 100;
+            IChargeFactory chargeFactory = new ChargeFactory(chargeProgressBar);
+            // Creation of batteryCharge using Simple Factory
+            batteryCharge = chargeFactory.CreateChargeType(ChargeType.chargeTask);
+            //batteryCharge = chargeFactory.CreateChargeType(ChargeType.chargeThread);
+
+
+            //things to do before form closing
+            FormClosing += MessageBoxForm_FormClosing;
+
+            //flag to check if SMS generating is running
+            smsRecievingIsActive = false;
         }
-        
+
         private void MessageBoxForm_Load(object sender, EventArgs e)
         {
-            timer1.Enabled = true;
-            messagenumber = 0;
+            messagenumber = SMSStorage.messages.Count();
 
             //populate userComboBox with unique user items
             List<string> users = messages.Select(x => x.User).Distinct().ToList();
@@ -49,28 +73,28 @@ namespace SimCorp.IMS.Framework.GUI
             {
                 userComboBox.Items.Add(user);
             }
+
+            batteryCharge.StartDischarging();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            messagenumber++;
-            OnSMSReceived($"Message #{messagenumber} has been recieved.");
-        }
 
-        private void OnSMSReceived(string message)
+        private void OnSMSReceived()
         {
-            if (InvokeRequired) {
-                Invoke(new SMSStorage.SMSAddedDelegate(OnSMSReceived), message);
-                return;        
-            }
-            var now = System.DateTime.Now;
-           recievedMessagesRichTextBox.AppendText(now+" "+message+Environment.NewLine);
+            smsRecievingIsActive = true;
+            smsGenerating.RunMessageGenerating(selectFormattingComboBox.SelectedIndex);
         }
         
         private void selectFormattingComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             recievedMessagesRichTextBox.Clear();
             SelectFormattingLabel.Visible = false;
+
+            //restart the SMS generating if is running
+            if (smsRecievingIsActive == true)
+            {
+                smsGenerating.StopMessageGenerating();
+                OnSMSReceived();
+            }
         }
        
         private void ShowMessage(List<Message> messages) {
@@ -168,5 +192,32 @@ namespace SimCorp.IMS.Framework.GUI
               ShowMessage(filteredmessages);        
         }
 
+        private void startGeneratingButton_Click(object sender, EventArgs e)
+        {
+                OnSMSReceived();
+        }
+
+        //Stop SMS generating
+        private void stopGeneratingButton_Click(object sender, EventArgs e)
+        {
+            smsRecievingIsActive = false;
+            smsGenerating.StopMessageGenerating();
+        }
+
+        //close all running threads before form closing
+        private void MessageBoxForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(Environment.ExitCode);
+        }
+
+        private void chargeButton_Click(object sender, EventArgs e)
+        {
+            batteryCharge.StartCharging();
+        }
+
+        private void stopChargeButton_Click(object sender, EventArgs e)
+        {
+            batteryCharge.StopCharging();
+        }
     }
 }

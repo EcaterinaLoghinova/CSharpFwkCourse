@@ -45,6 +45,11 @@
             this.messageTextBox = new System.Windows.Forms.TextBox();
             this.textSearchButton = new System.Windows.Forms.Button();
             this.allFiltersCheckBox = new System.Windows.Forms.CheckBox();
+            this.startGeneratingButton = new System.Windows.Forms.Button();
+            this.stopGeneratingButton = new System.Windows.Forms.Button();
+            this.chargeButton = new System.Windows.Forms.Button();
+            this.chargeProgressBar = new System.Windows.Forms.ProgressBar();
+            this.stopChargeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // selectFormattingComboBox
@@ -63,7 +68,7 @@
             "End with date and time",
             "Uppercase",
             "Lowercase"});
-            this.selectFormattingComboBox.Location = new System.Drawing.Point(12, 84);
+            this.selectFormattingComboBox.Location = new System.Drawing.Point(13, 124);
             this.selectFormattingComboBox.Name = "selectFormattingComboBox";
             this.selectFormattingComboBox.Size = new System.Drawing.Size(181, 24);
             this.selectFormattingComboBox.TabIndex = 0;
@@ -75,17 +80,12 @@
             // 
             this.recievedMessagesRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.recievedMessagesRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recievedMessagesRichTextBox.Location = new System.Drawing.Point(11, 121);
+            this.recievedMessagesRichTextBox.Location = new System.Drawing.Point(11, 164);
             this.recievedMessagesRichTextBox.Name = "recievedMessagesRichTextBox";
             this.recievedMessagesRichTextBox.ReadOnly = true;
-            this.recievedMessagesRichTextBox.Size = new System.Drawing.Size(410, 212);
+            this.recievedMessagesRichTextBox.Size = new System.Drawing.Size(410, 169);
             this.recievedMessagesRichTextBox.TabIndex = 1;
             this.recievedMessagesRichTextBox.Text = "";
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 2000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // userComboBox
             // 
@@ -120,7 +120,7 @@
             this.SelectFormattingLabel.AutoSize = true;
             this.SelectFormattingLabel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.SelectFormattingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.SelectFormattingLabel.Location = new System.Drawing.Point(19, 88);
+            this.SelectFormattingLabel.Location = new System.Drawing.Point(21, 128);
             this.SelectFormattingLabel.Name = "SelectFormattingLabel";
             this.SelectFormattingLabel.Size = new System.Drawing.Size(112, 16);
             this.SelectFormattingLabel.TabIndex = 6;
@@ -200,10 +200,69 @@
             this.allFiltersCheckBox.UseVisualStyleBackColor = true;
             this.allFiltersCheckBox.CheckedChanged += new System.EventHandler(this.allFiltersCheckBox_CheckedChanged);
             // 
+            // startGeneratingButton
+            // 
+            this.startGeneratingButton.AllowDrop = true;
+            this.startGeneratingButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.startGeneratingButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.startGeneratingButton.Location = new System.Drawing.Point(199, 124);
+            this.startGeneratingButton.Name = "startGeneratingButton";
+            this.startGeneratingButton.Size = new System.Drawing.Size(109, 24);
+            this.startGeneratingButton.TabIndex = 12;
+            this.startGeneratingButton.Text = "Start SMS recieving";
+            this.startGeneratingButton.UseVisualStyleBackColor = true;
+            this.startGeneratingButton.Click += new System.EventHandler(this.startGeneratingButton_Click);
+            // 
+            // stopGeneratingButton
+            // 
+            this.stopGeneratingButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.stopGeneratingButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.stopGeneratingButton.Location = new System.Drawing.Point(309, 124);
+            this.stopGeneratingButton.Name = "stopGeneratingButton";
+            this.stopGeneratingButton.Size = new System.Drawing.Size(112, 24);
+            this.stopGeneratingButton.TabIndex = 13;
+            this.stopGeneratingButton.Text = "Stop SMS recieving";
+            this.stopGeneratingButton.UseVisualStyleBackColor = true;
+            this.stopGeneratingButton.Click += new System.EventHandler(this.stopGeneratingButton_Click);
+            // 
+            // chargeButton
+            // 
+            this.chargeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.chargeButton.Location = new System.Drawing.Point(11, 96);
+            this.chargeButton.Name = "chargeButton";
+            this.chargeButton.Size = new System.Drawing.Size(75, 23);
+            this.chargeButton.TabIndex = 15;
+            this.chargeButton.Text = "Charge";
+            this.chargeButton.UseVisualStyleBackColor = true;
+            this.chargeButton.Click += new System.EventHandler(this.chargeButton_Click);
+            // 
+            // chargeProgressBar
+            // 
+            this.chargeProgressBar.Location = new System.Drawing.Point(11, 67);
+            this.chargeProgressBar.Name = "chargeProgressBar";
+            this.chargeProgressBar.Size = new System.Drawing.Size(206, 23);
+            this.chargeProgressBar.TabIndex = 16;
+            // 
+            // stopChargeButton
+            // 
+            this.stopChargeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.stopChargeButton.Location = new System.Drawing.Point(99, 96);
+            this.stopChargeButton.Name = "stopChargeButton";
+            this.stopChargeButton.Size = new System.Drawing.Size(97, 23);
+            this.stopChargeButton.TabIndex = 17;
+            this.stopChargeButton.Text = "Stop charging";
+            this.stopChargeButton.UseVisualStyleBackColor = true;
+            this.stopChargeButton.Click += new System.EventHandler(this.stopChargeButton_Click);
+            // 
             // MessageBoxForm
             // 
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(434, 345);
+            this.Controls.Add(this.stopChargeButton);
+            this.Controls.Add(this.chargeProgressBar);
+            this.Controls.Add(this.chargeButton);
+            this.Controls.Add(this.stopGeneratingButton);
+            this.Controls.Add(this.startGeneratingButton);
             this.Controls.Add(this.allFiltersCheckBox);
             this.Controls.Add(this.textSearchButton);
             this.Controls.Add(this.messageTextBox);
@@ -225,7 +284,6 @@
 
         }
         #endregion
-        private System.Windows.Forms.RichTextBox recievedMessagesRichTextBox;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ComboBox userComboBox;
         private System.Windows.Forms.DateTimePicker fromDateTimePicker;
@@ -240,5 +298,11 @@
         private System.Windows.Forms.TextBox messageTextBox;
         private System.Windows.Forms.Button textSearchButton;
         private System.Windows.Forms.CheckBox allFiltersCheckBox;
+        private System.Windows.Forms.Button startGeneratingButton;
+        private System.Windows.Forms.Button stopGeneratingButton;
+        private System.Windows.Forms.Button chargeButton;
+        private System.Windows.Forms.ProgressBar chargeProgressBar;
+        private System.Windows.Forms.Button stopChargeButton;
+        public System.Windows.Forms.RichTextBox recievedMessagesRichTextBox;
     }
 }

@@ -19,3 +19,11 @@ C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\PlaybackTest\obj\De
 C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\PlaybackTest\obj\Debug\SimCorp.IMS.Framework.Test.pdb
 C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\PlaybackTest\bin\Debug\SimCorp.IMS.Framework.GUI.exe
 C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\PlaybackTest\bin\Debug\SimCorp.IMS.Framework.GUI.pdb
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\PlaybackTest\bin\Debug\Castle.Core.dll
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\PlaybackTest\bin\Debug\Moq.dll
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\PlaybackTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\PlaybackTest\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\PlaybackTest\bin\Debug\Castle.Core.xml
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\PlaybackTest\bin\Debug\Moq.xml
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\PlaybackTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\PlaybackTest\bin\Debug\System.Threading.Tasks.Extensions.xml

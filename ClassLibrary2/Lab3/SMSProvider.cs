@@ -7,7 +7,7 @@ using System.Threading;
 namespace SimCorp.IMS.Framework
 { 
 
-  internal class SMSProvider{
+  public class SMSProvider{
 
         public SMSProvider()
         {
@@ -34,7 +34,6 @@ namespace SimCorp.IMS.Framework
             if (handler != null) {
                 handler(message);
             }
-
         }
 
         // Format a message with Custom formatting:
@@ -73,7 +72,14 @@ namespace SimCorp.IMS.Framework
         public string GenerateMessage(int index, string message){
 
             RaiseSMSReceivedEvent(message);
+            formattedMessage = MessageFormatting(index, message);
+            smsStorage.RaiseSMSAddedEvent(formattedMessage);
+            SMSStorage.AddMessage(formattedMessage);
+            return formattedMessage;
+        }
 
+        private string MessageFormatting(int index, string message)
+        {
             switch (index)
             {
                 case 0:
@@ -98,13 +104,8 @@ namespace SimCorp.IMS.Framework
                     formattedMessage = message + Environment.NewLine;
                     break;
             }
-
-            smsStorage.RaiseSMSAddedEvent(formattedMessage);
-            SMSStorage.AddMessage(formattedMessage);
             return formattedMessage;
         }
-
-
 
     }
 }
