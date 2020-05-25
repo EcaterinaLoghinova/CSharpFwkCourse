@@ -56,6 +56,9 @@
     <Compile Include="Lab4\MessagesFiltering.cs" />
     <Compile Include="Lab 5\ISMSGenerating.cs" />
     <Compile Include="Lab4\SMSStorage.cs" />
+    <Compile Include="Lab6\Call.cs" />
+    <Compile Include="Lab6\CallsStorage.cs" />
+    <Compile Include="Lab6\Contact.cs" />
     <Compile Include="Playback\iPhoneHeadset.cs" />
     <Compile Include="Playback\IPlayback.cs" />
     <Compile Include="Playback\PhoneSpeaker.cs" />

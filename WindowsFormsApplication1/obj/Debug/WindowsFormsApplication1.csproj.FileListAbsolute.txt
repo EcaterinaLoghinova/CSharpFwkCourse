@@ -25,3 +25,4 @@ C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplica
 C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\obj\Debug\SimCorp.IMS.Framework.GUI.Properties.Resources.resources
 C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\obj\Debug\SimCorp.IMS.Framework.GUI.MessageBoxForm.resources
+C:\Users\ela\Source\Repos\EcaterinaLoghinova\CSharpFwkCourse\WindowsFormsApplication1\obj\Debug\SimCorp.IMS.Framework.GUI.CallsForm.resources

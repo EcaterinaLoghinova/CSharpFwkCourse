@@ -76,6 +76,7 @@
     <Compile Include="SMSTextFormattingTest.cs" />
     <Compile Include="SMSFilteringTest.cs" />
     <Compile Include="SMSStorageTest.cs" />
+    <Compile Include="CallsTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary1\Lab1.csproj">

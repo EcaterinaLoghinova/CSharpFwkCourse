@@ -17,7 +17,8 @@ namespace SimCorp.IMS.Framework.GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
            // Application.Run(new SelectChargerForm());
-            Application.Run(new MessageBoxForm());
+           // Application.Run(new MessageBoxForm());
+            Application.Run(new CallsForm());
         }
     }
 }

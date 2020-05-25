@@ -49,6 +49,12 @@
   <ItemGroup>
     <Compile Include="BatteryChargingTask.cs" />
     <Compile Include="BatteryChargingThread.cs" />
+    <Compile Include="CallsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CallsForm.Designer.cs">
+      <DependentUpon>CallsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChargeFactory.cs" />
     <Compile Include="MessageBoxForm.cs">
       <SubType>Form</SubType>
@@ -68,6 +74,9 @@
     <Compile Include="SMSGeneratingFactory.cs" />
     <Compile Include="SMSGeneratingTask.cs" />
     <Compile Include="SMSGeneratingThread.cs" />
+    <EmbeddedResource Include="CallsForm.resx">
+      <DependentUpon>CallsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MessageBoxForm.resx">
       <DependentUpon>MessageBoxForm.cs</DependentUpon>
     </EmbeddedResource>
